@@ -1,0 +1,32 @@
+{
+  "_meta": { "name": "English" },
+  "screen": {
+    "slot": "Channel",
+    "voltage_short": "VOLT",
+    "current_short": "AMP",
+    "capacity_short": "CAP",
+    "status_short": "STATE",
+    "program_short": "PROGRAM",
+    "battery_short": "BATTERY",
+    "set_current": "CURRENT",
+    "start": "START",
+    "stop": "STOP"
+  },
+  "app": {
+    "name": "SkyRC Charger",
+    "summary": "Channel controls and live readings for SkyRC chargers on Tessera screens.",
+    "tile_name": "Charger channel",
+    "tile_example": "Channel A · voltage, program, current and controls",
+    "slot_name": "Channel label",
+    "voltage": "Voltage sensor",
+    "current": "Current sensor",
+    "capacity": "Capacity sensor",
+    "temperature": "Battery temperature sensor",
+    "status": "Channel status sensor",
+    "program_entity": "Charging program select",
+    "battery_entity": "Battery type select",
+    "current_entity": "Charge current number",
+    "start_entity": "Start button",
+    "stop_entity": "Stop button"
+  }
+}

@@ -1,0 +1,62 @@
+# Verified from Home Assistant: SkyRC charger, device werkstatt_b500neo.
+tiles:
+  - tile: "plugin:skyrc_charger.channel"
+    name: "Kanal A"
+    sizes: [4x3]
+    options:
+      slot: A
+      voltage: sensor.werkstatt_b500neo_channel_a_voltage
+      current: sensor.werkstatt_b500neo_channel_a_current
+      capacity: sensor.werkstatt_b500neo_channel_a_capacity
+      temperature: sensor.werkstatt_b500neo_channel_a_battery_temperature
+      status: sensor.werkstatt_b500neo_channel_a_status
+      program: select.werkstatt_b500neo_channel_a_program
+      battery_type: select.werkstatt_b500neo_channel_a_battery_type
+      charge_current: number.werkstatt_b500neo_channel_a_charge_current
+      start: button.werkstatt_b500neo_channel_a_start
+      stop: button.werkstatt_b500neo_channel_a_stop
+  - tile: "plugin:skyrc_charger.channel"
+    name: "Kanal B"
+    sizes: [4x3]
+    options:
+      slot: B
+      voltage: sensor.werkstatt_b500neo_channel_b_voltage
+      current: sensor.werkstatt_b500neo_channel_b_current
+      capacity: sensor.werkstatt_b500neo_channel_b_capacity
+      temperature: sensor.werkstatt_b500neo_channel_b_battery_temperature
+      status: sensor.werkstatt_b500neo_channel_b_status
+      program: select.werkstatt_b500neo_channel_b_program
+      battery_type: select.werkstatt_b500neo_channel_b_battery_type
+      charge_current: number.werkstatt_b500neo_channel_b_charge_current
+      start: button.werkstatt_b500neo_channel_b_start
+      stop: button.werkstatt_b500neo_channel_b_stop
+  - tile: "plugin:skyrc_charger.channel"
+    name: "Kanal C"
+    sizes: [4x3]
+    options:
+      slot: C
+      voltage: sensor.werkstatt_b500neo_channel_c_voltage
+      current: sensor.werkstatt_b500neo_channel_c_current
+      capacity: sensor.werkstatt_b500neo_channel_c_capacity
+      temperature: sensor.werkstatt_b500neo_channel_c_battery_temperature
+      status: sensor.werkstatt_b500neo_channel_c_status
+      program: select.werkstatt_b500neo_channel_c_program
+      battery_type: select.werkstatt_b500neo_channel_c_battery_type
+      charge_current: number.werkstatt_b500neo_channel_c_charge_current
+      start: button.werkstatt_b500neo_channel_c_start
+      stop: button.werkstatt_b500neo_channel_c_stop
+  - tile: "plugin:skyrc_charger.channel"
+    name: "Kanal D"
+    sizes: [4x3]
+    options:
+      slot: D
+      voltage: sensor.werkstatt_b500neo_channel_d_voltage
+      current: sensor.werkstatt_b500neo_channel_d_current
+      capacity: sensor.werkstatt_b500neo_channel_d_capacity
+      temperature: sensor.werkstatt_b500neo_channel_d_battery_temperature
+      status: sensor.werkstatt_b500neo_channel_d_status
+      program: select.werkstatt_b500neo_channel_d_program
+      battery_type: select.werkstatt_b500neo_channel_d_battery_type
+      charge_current: number.werkstatt_b500neo_channel_d_charge_current
+      start: button.werkstatt_b500neo_channel_d_start
+      stop: button.werkstatt_b500neo_channel_d_stop

@@ -1,0 +1,33 @@
+id: skyrc_charger
+version: 0.3.0
+api: "0.15"
+icon: battery-charging
+maintainer: community
+license: MIT
+stage: beta
+topics: [tech, home]
+requires:
+  esphome: 2026.6.2
+boards: any
+flash_kb: 8
+permissions:
+  home_assistant_actions: [button.press, number.set_value, select.select_option]
+tiles:
+  - id: channel
+    name: tile_name
+    icon: battery-charging
+    sizes: { min: 4x3, max: 4x3 }
+    memory: 900
+    example: tile_example
+    options:
+      - { id: slot, kind: text, label: slot_name, default: A }
+      - { id: voltage, kind: entity, domains: [sensor], attributes: [unit_of_measurement], label: voltage }
+      - { id: current, kind: entity, domains: [sensor], attributes: [unit_of_measurement], label: current }
+      - { id: capacity, kind: entity, domains: [sensor], attributes: [unit_of_measurement], label: capacity }
+      - { id: temperature, kind: entity, domains: [sensor], attributes: [unit_of_measurement], label: temperature }
+      - { id: status, kind: entity, domains: [sensor], attributes: [options], label: status }
+      - { id: program, kind: entity, domains: [select], attributes: [options], label: program_entity }
+      - { id: battery_type, kind: entity, domains: [select], attributes: [options], label: battery_entity }
+      - { id: charge_current, kind: entity, domains: [number], attributes: [unit_of_measurement, min, max, step], label: current_entity }
+      - { id: start, kind: entity, domains: [button], label: start_entity }
+      - { id: stop, kind: entity, domains: [button], label: stop_entity }
